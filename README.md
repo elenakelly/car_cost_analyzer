@@ -22,24 +22,24 @@ This project transforms raw rental receipts into structured data and actionable 
 car_cost_analyzer/
 │
 ├── data/
-│   └── raw_pdfs/
+│   └── raw_pdfs/          # Input PDF receipts
 │
 ├── src/
-│   ├── extractor.py
-│   ├── parser.py
-│   ├── cleaner.py
-│   ├── analyzer.py
-│   ├── visualizer.py
+│   ├── extractor.py       # PDF text extraction
+│   ├── parser.py          # Data parsing logic
+│   ├── cleaner.py         # Data cleaning & formatting
+│   ├── analyzer.py        # Insights & aggregations
+│   ├── visualizer.py      # Charts & plots
 │
 ├── app/
-│   └── dashboard.py
+│   └── dashboard.py       # Streamlit dashboard
 │
 ├── outputs/
-│   ├── reports/
-│   └── charts/
+│   ├── reports/           # CSV / reports
+│   └── charts/            # Saved visualizations
 │
-├── main.py
-└── requirements.txt
+├── main.py                # Main pipeline script
+└── requirements.txt       # Dependencies
 
 ## How It Works
 1.	Extraction
