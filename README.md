@@ -1,6 +1,6 @@
 # 🚗 Car Rental Cost Analyzer
 
-A professional Python tool for extracting, analyzing, and visualizing car rental expenses from PDF receipts.
+A Python tool for extracting, analyzing, and visualizing car rental expenses from PDF receipts.
 
 This project transforms raw rental receipts into structured data and actionable insights, helping you better understand your spending patterns and identify opportunities to reduce costs.
 
