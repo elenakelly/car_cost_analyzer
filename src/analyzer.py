@@ -13,5 +13,9 @@ def analyze(df):
     print("\nAverage cost per km:")
     print(df['price_per_km'].mean())
 
-    print("\nMost expensive weekday:")
-    print(df.groupby('weekday')['price'].mean().sort_values(ascending=False))
+    # FIX weekday order
+    order = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    weekday_avg = df.groupby('weekday')['price'].mean().reindex(order)
+
+    print("\nAverage cost by weekday:")
+    print(weekday_avg)
